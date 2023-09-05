@@ -1,0 +1,65 @@
+
+.App {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Add padding for spacing */
+  background-color:#282c34;
+}
+
+.left-column {
+  flex: 1; /* Take up as much space as available (left side) */
+}
+
+.right-column {
+  flex: 1; /* Take up as much space as available (right side) */
+  display: flex;
+   /* Align content to the right side */
+ 
+  padding-top: 40px;
+  padding: 40px;
+  color:azure;
+
+}
+
+.message-container {
+  max-width: 80%; /* Adjust the width as needed */
+}
+
+/* Additional CSS styles for the Carousel and Message components can be added here */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
