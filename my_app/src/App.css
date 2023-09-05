@@ -1,28 +1,29 @@
 
 .App {
+  background-color: #f0f0f0; /* Light gray background color */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  padding: 20px; /* Add padding for spacing */
-  background-color:#282c34;
 }
 
+/* Styles for the left column (Carousel) */
 .left-column {
-  flex: 1; /* Take up as much space as available (left side) */
+  background-color: #ffc107; /* Yellow background color */
+  flex: 1;
+  padding: 20px;
 }
 
+/* Styles for the right column (Message) */
 .right-column {
-  flex: 1; /* Take up as much space as available (right side) */
-  display: flex;
-   /* Align content to the right side */
- 
-  padding-top: 40px;
-  padding: 40px;
-  color:azure;
-
+  background-color: #2196F3; /* Blue background color */
+  flex: 1;
+  padding: 20px;
+  color: white; /* Text color */
 }
-
+.letter {
+  color: #ff5733; /* Replace with your desired color code or color name */
+}
 .message-container {
   max-width: 80%; /* Adjust the width as needed */
 }
