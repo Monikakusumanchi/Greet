@@ -22,7 +22,14 @@
   color: white; /* Text color */
 }
 .letter {
-  color: #ff5733; /* Replace with your desired color code or color name */
+  color:#9e00e9; /* Replace with your desired color code or color name */
+}
+.bottom {
+  text-align: left; /* Center-align the text horizontally */
+  margin-top: auto; /* Push the content to the bottom */
+  padding: 20px; /* Add some padding for spacing */
+  background-color: #f0f0f0
+
 }
 .message-container {
   max-width: 80%; /* Adjust the width as needed */
@@ -34,7 +41,42 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* celebrations.css */
 
+/* Define a class for colorful confetti */
+.confetti {
+  position: absolute;
+  width: 10px; /* Width of the square */
+  height: 10px; /* Height of the square */
+  background-color: #f00; /* Change to your desired background color */
+  animation: confetti-fall 5s linear infinite;
+}
+
+/* Define keyframes for square confetti animation */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.confetti-blue {
+  background-color: #0074e4; /* Blue color */
+}
+
+.confetti-green {
+  background-color: #00a74f; /* Green color */
+}
+
+.confetti-yellow {
+  background-color: #ffd500; /* Yellow color */
+}
+
+.confetti-purple {
+  background-color: #9e00e9; /* Purple color */
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -3,21 +3,21 @@ import './App.css';
 import React from 'react';
 import Carousel from './Carousel';
 import Message from './Message';
-
+import audioFile from './compress.mp3';
 function App() {
   return (
     <div className="App">
       <div className="left-column">
         <Carousel />
+        
       </div>
       <div className="right-column">
         <Message />
-      </div>
-      <div className="letter">
-        <p className="letter-paragraph">Dear Teacher,</p>
-        <p className="letter-paragraph">Thank you for your patience and understanding, for pushing me to be my best self, and for believing in me even when I didn't believe in myself.</p>
-        <p className="letter-paragraph">Yours Sincerely,</p>
-        <p className="letter-paragraph">Monika</p>
+        <audio autoPlay controls >
+        <source src={audioFile} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+     
       </div>
     </div>
   );
